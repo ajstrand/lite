@@ -29,6 +29,20 @@ or on Windows using the `build.bat` script *([MinGW](https://nuwen.net/mingw.htm
 Note that the project does not need to be rebuilt if you are only making changes
 to the Lua portion of the code.
 
+Linux
+Unzip the file and cd into the lite directory:
+
+tar -xzf <file>
+cd lite
+To run lite without installing:
+
+cd bin
+./lite
+To install lite copy files over into appropriate directories:
+
+mkdir -p $HOME/.local/bin && cp bin/lite $HOME/.local/bin
+cp -r share $HOME/.local
+
 ## Contributing
 Any additional functionality that can be added through a plugin should be done
 so as a plugin, after which a pull request to the
